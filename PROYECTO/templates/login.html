@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css"></link>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <title>index</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <a href="#" class="nav_logo">GESTOR DE TAREAS</a>
+          <ul class="nav_items">
+            <li class="nav_item">
+              <a href="#" class="nav_link">Equipo 5</a>
+            </li>
+          </ul>
+          <button class="button" id="form-open">Login</button>
+        </nav>
+      </header>
+      <!-- Home -->
+      <section class="home">
+        <div class="form_container">
+          <i class="uil uil-times form_close"></i>
+
+          <!-- Acceder -->
+          <div class="form login_form">
+            <form action="/login" method="post">
+              <h2>Login</h2>
+              <div class="input_box">
+                <input type="email" name = "email" placeholder="Ingresa tu correo" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" name = "password" placeholder="Ingresa tu contraseña" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <button type="submit"class="button">Acceder</button>
+              <div class="login_signup">¿No tienes una cuenta? <a href="#" id="signup">REGISTRARSE</a></div>
+            </form>
+          </div>
+
+          <!-- Registro -->
+          <div class="form signup_form">
+            <form action="/registro" method="post">
+              <h2>Registrarse</h2>
+              <div class="input_box">
+                <input type="nombre" name="nombre" placeholder="Ingresa tu nombre" required />
+                <i class="uil uil-envelope-alt nombre"></i>
+              </div>
+              <div class="input_box">
+                <input type="apellido" name="apellido" placeholder="Ingresa tu apellido" required />
+                <i class="uil uil-envelope-alt apellido"></i>
+              </div>
+              <div class="input_box">
+                <input type="email" name="email" placeholder="Ingresa tu correo" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" name="password" placeholder="Crea tu contraseña" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <button class="button" type="submit">Registrarse ahora</button>
+              <div class="login_signup">¿Ya tienes una cuenta? <a href="#" id="login">INGRESAR</a></div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <script src="/static/script.js"></script>
+   
+   
+    </body>
+  </html>
